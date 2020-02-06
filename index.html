@@ -3,18 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <!---bootstrapcnd (PageLayout-header&footer)-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    
+    
     <title>ABIKAS</title>
 </head>
-<body>
+<body class="container-fluid">
 <header>
 <hr>
     <div class="heading text-center">
@@ -24,95 +21,92 @@
 <hr>
 </header>
 
+<!---https://bootsnipp.com/snippets/ZldrD-->
 <section>
-    <div class="container">
-    	<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<div class="panel panel-login">
-					<div class="panel-heading">
-						<div class="row">
-                            <hr>							
-							<div class="text-center col">
-								<button><a href="#" id="register-form-link" class="btn form-control">Register</a></button>
-							</div>
-						</div>
-						<hr>
-					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-12">
-								<form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
-									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-									</div>
-									<div class="form-group">
-										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-									</div>
-									<div class="form-group text-center">
-										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-										<label for="remember"> Remember Me</label>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="text-center col-sm-6 col-sm-offset-3">												
-                                                <button class="text-center"><input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In"></button>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="text-center">
-													<a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</form>
-								<form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
-									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-									</div>
-									<div class="form-group">
-										<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
-									</div>
-									<div class="form-group">
-										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-									</div>
-									<div class="form-group">
-										<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-sm-6 col-sm-offset-3">
-												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Register</div>
+                        <div class="card-body">
+                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Full Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email_address" class="form-control" name="email-address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="user_name" class="form-control" name="username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="phone_number" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Present Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="present_address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Permanent Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="permanent_address" class="form-control" name="permanent-address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="nid_number" class="col-md-4 col-form-label text-md-right"><abbr
+                                                title="National Id Card">NID</abbr> Number</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="nid_number" class="form-control" name="nid-number">
+                                    </div>
+                                </div>
+
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-primary">
+                                        Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <footer>
     <div class="container">        
-        <h1 class="text-center"><br> Links <hr></h1>        
-        <br>
-         <div class="row">
-            <div class="col-lg-3 col-md-4 col-6 col-sm"></div>                       
-            <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-               <a href="http://ntracs.co.uk/" target="_blank" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="assets/images/ntracslogo.jpg" alt="">
+        <h3 class="text-center"><br> In association with... </h3>        
+           <div class="row">
+                                  
+            <div class="item col-sm">
+               <a href="http://ntracs.co.uk/" target="_blank" class="center fancylight popup-btn" data-fancybox-group="light">
+               <img class="logo img-fluid" src="assets/images/ntracslogo.jpg" alt="">
                </a>
             </div>
-            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+            <div class="item col-sm">
                <a href="https://www.trurehab.com/" target="_blank" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <img class="img-fluid" src="assets/images/trulogo.jpg" alt="">
+               <img class="logo img-fluid" src="assets/images/trulogo.jpg" alt="">
                </a>
             </div>
          </div>
