@@ -1,11 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* HOVER */
+
 /* INDEX */
 
 /* REGISTER */
 
+.loginhere {
+    margin-left: 250px;
+}
+
+.regments {
+    margin-right: 150px;
+}
+
+.chead {
+    margin-left: 70px;
+}
+
 /* HOME */
 
 .whatis {
-    border-style: solid;
+    margin-left: 1.25px;
+}
+
+.heading {
+    background-color: #DCDCDC;
+    border-right: solid;
+    border-left: solid;
+    border-color: #404040;
+    border-width: 20px;
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-top: solid;
+    border-top-color: black;
+    
+}
+
+.para {
+    padding: 10x;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* CONTACT */
