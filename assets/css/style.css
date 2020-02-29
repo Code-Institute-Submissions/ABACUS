@@ -15,7 +15,12 @@
 }
 
 .chead {
-    margin-left: 70px;
+    margin-left: 70px; 
+     
+}
+
+.formbot {
+    margin-bottom: 59px;
 }
 
 /* HOME */
@@ -41,6 +46,12 @@
     padding: 10x;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.logged {
+    border: solid;
+    border-color: black;
+    border-width: 25px;
 }
 
 /* CONTACT */
