@@ -4,10 +4,6 @@
 
 /* REGISTER */
 
-.formbot {
-    margin-bottom: 59px;
-}
-
 /* HOME */
 
 .whatis {
@@ -43,4 +39,8 @@
 
 .bold {
     font-weight: bold;
+}
+
+.formbot {
+    margin-bottom: 59px;
 }
